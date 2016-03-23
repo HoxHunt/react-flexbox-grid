@@ -1,10 +1,9 @@
 import React, {Component, PropTypes} from 'react';
 import classNames from 'classnames';
-import style from 'flexboxgrid';
 
 export default class Grid extends Component {
   render() {
-    const containerClass = this.props.fluid ? 'container-fluid' : 'container'];
+    const containerClass = this.props.fluid ? 'container-fluid' : 'container';
     const className = classNames(this.props.className, containerClass);
 
     return React.createElement(this.props.tagName || 'div', Object.assign({}, this.props, {
